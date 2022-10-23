@@ -11,15 +11,19 @@ body {
       variables.$quaternary 56%
     );
 }
-
+.font-color-white {
+    color: variables.$white;
+}
 .header {
     overflow: hidden;
     background: variables.$primary;
-    color: variables.$white;
+    @extend .font-color-white;
+    
 }
 .secondary-header {
     overflow: hidden;
     background: variables.$secondary;
     padding-top: 8px;
     padding-bottom: 8px;
+    @extend .font-color-white;
 }
