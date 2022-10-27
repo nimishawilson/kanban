@@ -1,3 +1,8 @@
-<!-- <div class="card-container">
-    <h2 class="uppercase"> {{ heading }} </h2>
-</div> -->
+<div cdkDropListGroup class="card-layout">
+    <div class="card-container" *ngFor="let column of boardItems.columns">
+      <h2 class="uppercase"> {{ column.name }} </h2>
+      <div cdkDropList [cdkDropListData]="column.tasks" class="example-list" (cdkDropListDropped)="drop($event)">
+        <div class="example-box" *ngFor="let item of column.tasks" cdkDrag>{{item}}</div>
+      </div>
+    </div>
+  </div>
