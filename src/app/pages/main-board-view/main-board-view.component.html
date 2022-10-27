@@ -1,4 +1,9 @@
 <app-header> </app-header>
-<div class="card-layout">
-    <app-card *ngFor="let item of [1,2,3,4]"> </app-card>
+<div cdkDropListGroup class="card-layout">
+  <div class="card-container" *ngFor="let column of board.columns">
+    <h2 class="uppercase"> {{ column.name }} </h2>
+    <div cdkDropList [cdkDropListData]="column.tasks" class="example-list" (cdkDropListDropped)="drop($event)">
+      <div class="example-box" *ngFor="let item of column.tasks" cdkDrag>{{item}}</div>
+    </div>
+  </div>
 </div>

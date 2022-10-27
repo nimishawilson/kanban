@@ -7,6 +7,9 @@ import { MainBoardViewComponent } from './pages/main-board-view/main-board-view.
 import { HeaderComponent } from './components/header/header.component';
 import { CardComponent } from './components/card/card.component';
 
+  // Material cdk modules
+import { DragDropModule } from '@angular/cdk/drag-drop';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +19,10 @@ import { CardComponent } from './components/card/card.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+    // Material cdk modules
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
