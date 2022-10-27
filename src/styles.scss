@@ -3,7 +3,7 @@
 @use 'variables';
 
 body {
-   
+    margin: 0px;
     background: variables.$tertiary;
     background: linear-gradient(
       90deg,
