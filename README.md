@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6. It is a kanban board user interface where user can drag and drop items to different columns. Drag and drop functionality is achieved by angular material CDK. 
 
-Deployed URL is [HERE](kanban-board-123.netlify.app/).
+Deployed URL is [HERE](https://kanban-board-123.netlify.app/).
 
 ## Development server
 
